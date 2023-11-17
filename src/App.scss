@@ -1,0 +1,66 @@
+.App {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__Graph {
+        padding: 50px;
+        height: 85%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        span {
+            background-color: rgb(63, 63, 63);
+            border: 1px rgb(27, 27, 27) solid;
+            border-radius: 0.3rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-top: .5rem;
+                color: $secondary;
+                font-size: .8em;
+            }
+        }
+    }
+
+    &__Menu {
+        padding: 0px 20px 20px 20px;
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .menu-container {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .custom-label {
+            width: fit-content !important;
+
+            .input-group-text {
+                background-color: rgb(34, 34, 34) !important;
+                color: $secondary;
+                border: none;
+            }
+
+            .form-control {
+                background-color: rgb(65, 52, 52) !important;
+                color: $primary;
+                border: none;
+            }
+        }
+    }
+}
